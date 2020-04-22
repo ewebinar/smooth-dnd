@@ -11,7 +11,7 @@ module.exports = {
     file: './dist/index.js',
     format: 'umd',
     sourcemap: false,
-    name: 'ys-smoothDnD',
+    name: 'smoothDnD',
     exports: 'named',
   },
 	plugins: [
