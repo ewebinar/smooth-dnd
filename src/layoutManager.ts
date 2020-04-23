@@ -166,8 +166,10 @@ export default function layoutManager(containerElement: ElementX, orientation: O
 	function setVisibility(element: ElementX, isVisible: boolean) {
 		if (element[visibilityValue] === undefined || element[visibilityValue] !== isVisible) {
 			if (isVisible) {
+				element.classList.add('smooth-dnd-drag-shadow');
 				element.style.removeProperty('visibility');
 			} else {
+				element.classList.remove('smooth-dnd-drag-shadow');
 				element.style.visibility = 'hidden';
 			}
 			element[visibilityValue] = isVisible;
